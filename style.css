@@ -1,0 +1,42 @@
+header.major h2 {
+  font-size: 260%;
+}
+
+
+#one {
+  background-color: pink;
+  color: white;
+  padding: 20px !important;
+}
+
+#one *:first-child {
+  background-color: magenta;
+}
+
+#one p::first-letter {
+  font-size: 400%;
+  font-weight: bolder;
+}
+
+#one header.major h2::before {
+  content: " -|- ";
+}
+#one header.major h2::after {
+  content: " -|- ";
+}
+
+
+@media(max-width: 500px) {
+  #four section {
+    width: 100%;
+    font-family: "Comic Sans"; 
+  }
+}
+
+@media(min-width: 501px) {
+  #four section {
+    width: 40%;
+    float: left;
+    margin-right: 20px;
+  }
+}
